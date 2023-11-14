@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  color:#293264;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  border: solid 1px black;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.btn-1 {
+  background-color: #4D5B9E;
+  color: white;
+  border: 0;
+  padding: .6em 1.2em;
+  border-radius: 10px;
+
+}
+
+.start-btn {
+  font-size: 1rem;
+  padding: 1em 3em;
+}
+
+
+button:hover
+{
+  filter:brightness(140%);
+  transition: all 500ms;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.question {
+  border-bottom: 0.79px solid #DBDEF0;
+  padding: 1em;
+  max-width: 400px;
+  margin: 0 auto;
+
+}
+
+.question_title {
+  margin-bottom: .7em;
+}
+
+
+.answers {
+  display: flex;
+  gap: .4em;
+  flex-wrap: wrap;
+}
+.answer {
+  border-radius: 10px;
+  border: solid 1px #4D5B9E;
+  background: transparent;
+  color: #293264;
+  font-size: 0.64rem;
+  padding: .5em 1em;
+
+}
+
+.answer:hover {
+  background:#293264;
+  color: white;
+
+}
+
+.selected {
+  border: 0;
+  background-color: #D6DBF5;
+}
+
+.checked {
+  background-color: #94D7A2;
+  color: #293264;
+}
+
+
+.check-btn {
+  margin-top: 1.5em;
+}
+
+.corrected {
+  background-color: #F8BCBC;
+}
+
+.post-check {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+
+
