@@ -1,5 +1,5 @@
 import { arrayShuffle } from "array-shuffle";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { JSX } from "react/jsx-runtime";
 import type { QuizDataItem, QuizDataOriginal } from "./Quiz.types";
 import styles from "./Quiz.module.css";
@@ -20,7 +20,10 @@ export default function Quiz(): JSX.Element {
     return prev;
   }, 0);
 
-  function chooseAnswer(indexA: number, answer: string): void {
+  const chooseAnswer = useCallback(function (
+    indexA: number,
+    answer: string,
+  ): void {
     setQuizData((prev) => {
       return prev.map((quizDataItem, indexB) =>
         indexA === indexB && quizDataItem.answers.includes(answer)
@@ -31,7 +34,7 @@ export default function Quiz(): JSX.Element {
           : quizDataItem,
       );
     });
-  }
+  }, []);
 
   useEffect(() => {
     if (isGameOver) {
