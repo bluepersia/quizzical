@@ -1,0 +1,29 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-declaration-strict-value"],
+  "rules": {
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]*$",
+    "scale-unlimited/declaration-strict-value": [
+      [
+        "/color/",
+        "/background-color/",
+        "font-family",
+        "font-size",
+        "font-weight",
+        "/border-radius/"
+      ],
+      {
+        "ignoreValues": [
+          "0",
+          "none",
+          "transparent",
+          "inherit",
+          "auto",
+          "currentColor"
+        ],
+        "disableFix": false,
+        "severity": "error"
+      }
+    ]
+  }
+}
