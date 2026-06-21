@@ -1,0 +1,16 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: var(--font-size-400);
+  margin-bottom: 0.43rem;
+}
+
+.desc {
+  margin-bottom: 1.81rem;
+}
