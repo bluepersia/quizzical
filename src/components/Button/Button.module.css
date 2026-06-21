@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--color-dark-blue);
+  color: var(--color-very-light-blue);
+  font-weight: var(--font-weight-500);
+  padding: 1rem 2.2rem;
+  border-radius: var(--radius-300);
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(120%);
+  transform: scale(1.2);
+}
