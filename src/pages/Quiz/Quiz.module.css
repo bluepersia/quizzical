@@ -1,0 +1,21 @@
+.quiz {
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 2.5rem 1rem;
+}
+
+.results {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.resultsInner {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.correctAnswers {
+  font-weight: var(--font-weight-700);
+}
